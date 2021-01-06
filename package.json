@@ -5,22 +5,22 @@
     "jbrowse2"
   ],
   "main": "dist/index.js",
-  "module": "dist/jbrowse-plugin-my-project.esm.js",
+  "module": "dist/jb2-plugin-testing.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "start": "tsdx watch --verbose --noClean --format umd --name JBrowsePluginMyProject --onFirstSuccess \"yarn serve --cors --listen 9000 .\"",
-    "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginMyProject",
+    "start": "tsdx watch --verbose --noClean --format umd --name JBrowsePluginjb2-plugin-testing --onFirstSuccess \"yarn serve --cors --listen 9000 .\"",
+    "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginjb2-plugin-testing",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepublishOnly": "yarn test",
     "postinstall": "jbrowse-plugin-postinstall"
   },
   "jbrowse-plugin": {
-    "name": "MyProject"
+    "name": "jb2-plugin-testing"
   },
   "prettier": {
     "semi": false,
@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",
-    "@jbrowse/core": "^1.0.3",
-    "@jbrowse/development-tools": "^1.0.3",
+    "@jbrowse/core": "/Users/elliothershberg/Documents/jbrowse-core-v1.0.2.tgz",
+    "@jbrowse/development-tools": "/Users/elliothershberg/Documents/jbrowse-development-tools-v1.0.2.tgz",
     "@material-ui/core": "^4.9.13",
     "@material-ui/lab": "^4.0.0-alpha.45",
     "@types/react": "^17.0.0",
@@ -47,5 +47,10 @@
     "tslib": "^2.0.3",
     "typescript": "^4.1.3"
   },
-  "private": true
+  "private": true,
+  "name": "jb2-plugin-testing",
+  "description": "Figuring out jb2 plugin testing",
+  "repository": "https://github.com/elliothershberg/jb2-plugin-testing.git",
+  "author": "Elliot Hershberg <eahershberg@gmail.com>",
+  "license": "MIT"
 }
