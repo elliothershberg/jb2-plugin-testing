@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "start": "tsdx watch --verbose --noClean --format umd --name JBrowsePluginMyProject --onFirstSuccess \"yarn serve --cors --listen 9000 .\"",
+    "browse": "cd .jbrowse && cp ../jbrowse_config.json . && mv jbrowse_config.json config.json && npx serve .",
     "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginMyProject",
     "test": "tsdx test",
     "lint": "tsdx lint",
