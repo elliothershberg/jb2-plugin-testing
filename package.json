@@ -14,6 +14,7 @@
   "scripts": {
     "start": "tsdx watch --verbose --noClean --format umd --name JBrowsePluginMyProject --onFirstSuccess \"yarn serve --cors --listen 9000 .\"",
     "browse": "cd .jbrowse && cp ../jbrowse_config.json . && mv jbrowse_config.json config.json && npx serve .",
+    "browse-upgrade": "cd .jbrowse && rm -rf * && jbrowse create .",
     "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginMyProject",
     "test": "tsdx test",
     "lint": "tsdx lint",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",
+    "@jbrowse/cli": "^1.0.2",
     "@jbrowse/core": "/Users/elliothershberg/Documents/jbrowse-core-v1.0.2.tgz",
     "@jbrowse/development-tools": "/Users/elliothershberg/Documents/jbrowse-development-tools-v1.0.2.tgz",
     "@material-ui/core": "^4.9.13",
