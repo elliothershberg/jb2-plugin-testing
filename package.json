@@ -12,15 +12,15 @@
     "src"
   ],
   "scripts": {
-    "start": "tsdx watch --verbose --noClean --format umd --name JBrowsePluginjb2-plugin-testing --onFirstSuccess \"yarn serve --cors --listen 9000 .\"",
-    "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginjb2-plugin-testing",
+    "start": "tsdx watch --verbose --noClean --format umd --name JBrowsePluginMyProject --onFirstSuccess \"yarn serve --cors --listen 9000 .\"",
+    "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginMyProject",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepublishOnly": "yarn test",
     "postinstall": "jbrowse-plugin-postinstall"
   },
   "jbrowse-plugin": {
-    "name": "jb2-plugin-testing"
+    "name": "MyProject"
   },
   "prettier": {
     "semi": false,
