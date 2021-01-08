@@ -1,5 +1,6 @@
 import Plugin from '@jbrowse/core/Plugin'
 import PluginManager from '@jbrowse/core/PluginManager'
+import { isAbstractMenuManager } from '@jbrowse/core/util'
 
 export default class MyProjectPlugin extends Plugin {
   name = 'MyProject'
@@ -41,13 +42,15 @@ export default class MyProjectPlugin extends Plugin {
   }
 
   configure(pluginManager: PluginManager) {
-    // @ts-ignore
-    pluginManager.rootModel.appendToSubMenu(['File', 'Add'], {
-      label: 'Open Hello!',
+    if (isAbstractMenuManager(pluginManager.rootModel)) {
       // @ts-ignore
-      onClick: session => {
-        session.addView('HelloView', {})
-      },
-    })
+      pluginManager.rootModel.appendToSubMenu(['File', 'Add'], {
+        label: 'Open Hello!',
+        // @ts-ignore
+        onClick: session => {
+          session.addView('HelloView', {})
+        },
+      })
+    }
   }
 }
