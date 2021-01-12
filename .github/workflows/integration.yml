@@ -15,6 +15,6 @@ jobs:
       - name: Install deps (with cache)
         uses: bahmutov/npm-install@v1
       - name: Get latest JBrowse
-        run: yarn browse-upgrade
+        run: mkdir .jbrowse && cd .jbrowse && jbrowse create .
       # - name: Test plugin
       #   run: yarn e2e
