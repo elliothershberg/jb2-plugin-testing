@@ -23,10 +23,10 @@ export default class MyProjectPlugin extends Plugin {
       const [pushed, setPushed] = React.useState('')
       return (
         <div style={{ padding: 50 }}>
-          <h1>Hello bioinformaticians!</h1>
+          <h1>Hello plugin developers!</h1>
           <button
             onClick={() => {
-              setPushed('heck ya, ya pushed the button')
+              setPushed('Woah! You pushed the button!')
             }}
           >
             Push the button
