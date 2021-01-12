@@ -17,6 +17,4 @@ jobs:
       - name: Get latest JBrowse
         run: mkdir .jbrowse && cd .jbrowse && yarn run jbrowse create --force .
       - name: Test plugin
-        uses: cypress-io/github-action@v1
-        with: 
-          command: yarn run e2e
+        run: yarn run e2e
