@@ -16,5 +16,7 @@ jobs:
         uses: bahmutov/npm-install@v1
       - name: Get latest JBrowse
         run: mkdir .jbrowse && cd .jbrowse && yarn run jbrowse create --force .
+      - name: Figure out where I am
+        run: pwd && ls
       - name: Test plugin
         run: yarn run e2e
