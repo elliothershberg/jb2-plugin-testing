@@ -38,8 +38,8 @@
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",
     "@jbrowse/cli": "^1.0.2",
-    "@jbrowse/core": "/Users/elliothershberg/Documents/jbrowse-core-v1.0.2.tgz",
-    "@jbrowse/development-tools": "/Users/elliothershberg/Documents/jbrowse-development-tools-v1.0.2.tgz",
+    "@jbrowse/core": "^1.0.3",
+    "@jbrowse/development-tools": "^1.0.3",
     "@material-ui/core": "^4.9.13",
     "@material-ui/lab": "^4.0.0-alpha.45",
     "@types/react": "^17.0.0",
