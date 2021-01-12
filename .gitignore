@@ -117,3 +117,7 @@ dist
 
 # Ignore the directory with the JBrowse 2 build
 .jbrowse
+
+# Cypress specific files
+cypress/videos
+cypress/screenshots
