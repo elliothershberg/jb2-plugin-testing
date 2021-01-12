@@ -1,4 +1,4 @@
-# jbrowse-plugin-template
+# jbrowse-plugin-template ![Integration](https://github.com/elliothershberg/jb2-plugin-testing/workflows/Integration/badge.svg?branch=main)
 
 > Template to quickly start a new JBrowse plugin
 
