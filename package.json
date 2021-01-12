@@ -16,7 +16,7 @@
     "browse": "cd .jbrowse && cp ../jbrowse_config.json . && mv jbrowse_config.json config.json && npx serve .",
     "browse-upgrade": "cd .jbrowse && rm -rf * && jbrowse create .",
     "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginMyProject",
-    "test": "cypress run --browser chrome",
+    "test": "cypress run --headless --browser chrome",
     "cypress": "cypress open",
     "lint": "tsdx lint",
     "prepublishOnly": "yarn test",
