@@ -17,6 +17,7 @@
     "browse-upgrade": "cd .jbrowse && rm -rf * && jbrowse create .",
     "build": "tsdx build --format cjs,esm,umd --name JBrowsePluginMyProject",
     "test": "cypress run --headless --browser chrome",
+    "e2e": "start-test start 9000 browse 5000 test",
     "cypress": "cypress open",
     "lint": "tsdx lint",
     "prepublishOnly": "yarn test",
@@ -49,6 +50,7 @@
     "react": "^16.8.0",
     "rxjs": "^6.0.0",
     "serve": "^11.3.2",
+    "start-server-and-test": "^1.11.7",
     "tslib": "^2.0.3",
     "typescript": "^4.1.3"
   },
