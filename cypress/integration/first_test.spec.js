@@ -6,6 +6,6 @@ describe('My First Test', () => {
     cy.visit('/')
 
     // The splash screen succesfully loads
-    // cy.contains('Start a new session')
+    cy.contains('Start a new session')
   })
 })
